@@ -85,7 +85,7 @@ CODE                                0000802D    0000003E =          62. bytes (R
 
 Files Linked                              [ module(s) ]
 
-./obj/stm8s_blink_main.rel                [ stm8s_blink_main ]
+./src/obj/stm8s_blink_main.rel            [ stm8s_blink_main ]
 
 
 Libraries Linked                          [ object file ]
