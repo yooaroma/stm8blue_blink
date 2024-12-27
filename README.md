@@ -4,7 +4,6 @@
 - [결선도](https://yooaroma.com/mm/image/stm8/stm8blue/stm8blue_blink_text.jpg)
 - [동영상](https://youtu.be/91NS3JlYVoQ?si=maEv8KytppFKadTg)
 - [프로그램 소스](https://github.com/yooaroma/stm8blue_blink)
--
 
 ## ST 마이컴 개발시 설치 TOOLS
 
@@ -83,5 +82,21 @@
 - Configure 선택 (ST-LINK - USB - SWIM - STM8S105x6) OK
 - Program -> Current Tab (Ctl-P)
 - File -> Exit
+
+---
+
+## GPIO 설명
+
+- PB5 : LED
+- PD3 : KEY
+- PD5 : UART1_TX
+- PD6 : UART1_RX
+- PC7 : SPI_MISO
+- PC6 : SPI_MOSI
+- PC5 : SPI_SCK
+- PA3 : SPI_NSS
+- PD2 : AIN3
+- PB5 : I2C_SDA
+- PB4 : I2C_SCL
 
 ---

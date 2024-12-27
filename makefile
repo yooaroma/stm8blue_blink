@@ -16,6 +16,7 @@ PRJ_MCU_FLASH = stm8s103f3
 
 #do not edit
 TOP_DIR = .
+TOP_SRC = ./src
 OBJ_DIR = ./src/obj
 EXE_DIR = ./src/exe
 
@@ -38,7 +39,7 @@ all: $(OBJS)
 	packihx $(EXE_DIR)/$(PRJ).ihx > $(EXE_DIR)/$(PRJ).hex
 #	makebin -s $(FLASH_SIZE) $(PRJ).ihx $(PRJ).bin
 
-$(OBJ_DIR)/%.rel: %.c
+$(OBJ_DIR)/%.rel: $(TOP_SRC)/%.c
 	$(CC) -c -mstm8 -D$(PRJ_MCU) $< -I. -I$(TOP_DIR)/lib/inc -o $@
 # $(CC) -c -mstm8 -D$(PRJ_MCU) $< -I. -I$(TOP_DIR)/lib/inc -I$(TOP_DIR)/mlib -o $@
 #	$(CC) -c -mstm8 -D$(PRJ_MCU) -DUSE_STDPERIPH_DRIVER $< -I. -Ilib/inc -Iusr/inc -o $@
